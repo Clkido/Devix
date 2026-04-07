@@ -73,7 +73,7 @@ async function callPuter(modelId, messages, sysOverride, onChunk) {
   const resp = await window.puter.ai.chat(
     fullMessages[fullMessages.length - 1].content,
     {
-      model: "claude-sonnet-4-5",
+      model: "claude-opus-4-6",
       stream: true,
       // include prior context as system prefix
       system: fullMessages.slice(0,-1).map(m=>m.role+": "+m.content).join("\n\n"),
