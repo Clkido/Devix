@@ -682,7 +682,7 @@ function AgentsPanel({user,modelId,onSelectModel,onUnlock,showToast}){
         <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:16}}>
           <span style={{fontSize:12,color:"#333"}}>Powered by</span>
           <span className="puter-badge">✦ Claude Sonnet 4.5 via Puter.js</span>
-          <span style={{fontSize:11,color:"#222"}> free, no API key</span>
+          <span style={{fontSize:11,color:"#222"}}> free, no API key</span>
         </div>
       </div>
       <div style={{display:"flex",flexDirection:"column",gap:10}}>
