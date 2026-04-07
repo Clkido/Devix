@@ -44,9 +44,9 @@ function parseJwt(t){try{return JSON.parse(atob(t.split(".")[1].replace(/-/g,"+"
 
 /* ── MODELS ── */
 const MODELS={
-  zenith:{id:"zenith",name:"Zenith",sub:"Standard · Free",  desc:"Fast, accurate Luau scripts powered by Claude.",     color:"#a855f7",bg:"rgba(168,85,247,.09)",free:true, mode:"quick"},
+  zenith:{id:"zenith",name:"Zenith",sub:"Standard · Free",  desc:"Fast, accurate Luau scripts.",     color:"#a855f7",bg:"rgba(168,85,247,.09)",free:true, mode:"quick"},
   zaith: {id:"zaith", name:"Zaith", sub:"Advanced · Key",   desc:"Deeper architecture, better code. Requires a key.",  color:"#8b5cf6",bg:"rgba(139,92,246,.09)",free:false,mode:"zaith"},
-  zeno:  {id:"zeno",  name:"Zeno",  sub:"Maximum · Key",    desc:"Full Claude power, best possible answers.",           color:"#7c3aed",bg:"rgba(124,58,237,.09)",free:false,mode:"zeno"},
+  zeno:  {id:"zeno",  name:"Zeno",  sub:"Maximum · Key",    desc:"Full power, best possible answers.",           color:"#7c3aed",bg:"rgba(124,58,237,.09)",free:false,mode:"zeno"},
 };
 
 /* ── SYSTEM PROMPTS ── */
@@ -681,8 +681,8 @@ function AgentsPanel({user,modelId,onSelectModel,onUnlock,showToast}){
         <h2 style={{fontSize:16,fontWeight:700,color:"#ddd",marginBottom:4}}>AI Models</h2>
         <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:16}}>
           <span style={{fontSize:12,color:"#333"}}>Powered by</span>
-          <span className="puter-badge">✦ Claude Sonnet 4.5 via Puter.js</span>
-          <span style={{fontSize:11,color:"#222"}}> free, no API key</span>
+          <span className="puter-badge">✦ Claude Opus 4.6</span>
+          <span style={{fontSize:11,color:"#222"}}> intelligent, efficient</span>
         </div>
       </div>
       <div style={{display:"flex",flexDirection:"column",gap:10}}>
